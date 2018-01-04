@@ -1,4 +1,7 @@
 README
+
+Repository for the machine learning contest conducted as part of CS4011 class.
+Our final model was an ensemble of SVMs and neural networks.
 —————————————————————————————————————————————
 —————————————————————————————————————————————
 Classifier codes present in the directory
