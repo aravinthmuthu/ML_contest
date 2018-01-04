@@ -1,0 +1,36 @@
+report:
+
+Neural networks:
+To fit high dimensional data, neural networks are a very good choice. We explored deep networks with different depths and neuron counts.
+We also varied the minibatch size, learning rate and optimiser functions. The three models out of all that we tried that has given us the best insights are explained below.
+
+Model1:
+Input:
+Hidden layers: 2000,1000,500. 
+Learning rates: 0.001, 0.0001
+Optimiser: Adam
+Observation: The model overfit early on giving a max validation score of 33.39
+
+Model2:
+Input:
+Hidden layers: 1500,500,200
+Learning rates: 0.001, 0.0001
+Optimiser: Adam
+minibatch size: 1000
+Observation: The model again overfit early on giving a max validation score of 33.39
+   	The training loss decreae was much smoother than with smaller minibatch sizes previously.
+
+Model3:
+Input: 2000D (200 best features(PCA) of first 500 from mice imputation, first 1800(PCA) from the rest of 2100 features)
+Hidden layers: 800, 300
+Dropout (keep_probab) values tried: 0.9, 0.7, 0.5, 0.2
+Learning rates: 0.001 with step descent after 10000 iterations
+Optimiser: Adam
+Observation: We tried to introduce batch_norm after each layer, but the training almost saturated very early making incremental updates, hence we removed it.
+The learning was much faster with keep_probab = 0.9, but the test loss hit a minimum at test accuracy = 34.78
+       The best validation accuracy of 37.4 was obtained with keep_probab = 0.5
+       With keep_probab = 0.2, the model was unable to overfit completely, the training accuracy reached only a maximum of 0.83 after 100000 iterations.
+
+
+XGBoost:
+

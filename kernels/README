@@ -1,0 +1,50 @@
+README
+—————————————————————————————————————————————
+—————————————————————————————————————————————
+Classifier codes present in the directory
+Codes:
+	10classifiers.py
+	PCA.py
+	adaboost.py
+	bagging.py
+	clustering.py
+	fancyimp.py
+	isvd_impute.py
+	knn.py
+	logreg.py
+	mice.py
+	nn.py
+	nn_bn_dropout.py
+	nn_dropout.py
+	nn_dropout.textClipping
+	process_data.py
+	report:
+	svm.py
+	svm_gridsearch.py
+	svmbag.py
+	tsne.py
+	tsne_nn.py
+	weighted_vote.py
+	xgboost_crossval.py
+	xgbooster.py
+
+—————————————————————————————————————————————
+Data present in the directory -
+Data:
+Original data:
+	train.csv
+	test.csv
+MICE imputed data:
+	train_mice.csv
+	test_mice.csv
+MICE imputed data with PCA:
+	train_mice_2000.csv
+	test_mice_2000.csv
+
+—————————————————————————————————————————————
+Figures:
+	plots for the report
+
+—————————————————————————————————————————————
+—————————————————————————————————————————————
+
